@@ -76,7 +76,7 @@ type TunnelBindingSubjectSpec struct {
 	// Only useful if the protocol is HTTPS. Default is 10 seconds.
 	// +kubebuilder:validation:Optional
 	// +kubebuilder:default:=10
-	TlsTimeout uint `json:"tlsTimeout"`
+	TlsTimeout uint `json:"tlsTimeout,omitempty"`
 
 	// NoTlsVerify disables TLS verification for this service.
 	// Only useful if the protocol is HTTPS.
